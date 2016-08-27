@@ -21,7 +21,7 @@ var app = express();
 app.use(serveStatic(__dirname + '/public'));
 
 //db
-mongoose.connect('mongodb://localhost/battle-tour-api');
+mongoose.connect('mongodb://localhost:27017/battle-tour-api');
 
 
 // Add headers
