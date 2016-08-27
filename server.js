@@ -67,5 +67,5 @@ app.use(routes);
 app.listen(process.env.PORT, process.env.IP, function(req, res){
     seedDB.createDummyBattle();
     seedDB.createDummyBattle2();
-    logger.info('Webserver started');
+    logger.info( 'Webserver started at:' + process.env.IP + ':' + process.env.PORT );
 });
