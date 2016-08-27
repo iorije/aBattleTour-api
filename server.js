@@ -64,8 +64,11 @@ app.use(sessionHelper.sessionCookie);
 app.use(routes);
 
 //start server
-app.listen(process.env.PORT, process.env.IP, function(req, res){
+var port = process.env.PORT || 3000;
+var host = process.env.HOST || '0.0.0.0';
+
+app.listen(port, host, function(req, res){
     seedDB.createDummyBattle();
     seedDB.createDummyBattle2();
-    logger.info( 'Webserver started at:' + process.env.IP + ':' + process.env.PORT );
+    logger.info( 'Webserver started at:' + host + ':' + port );
 });
