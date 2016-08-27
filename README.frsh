@@ -1,7 +1,10 @@
+this is a small api that serves json formatted data for an app called aBattleTour. aBattletour is an Aurelia app also on this github account.
+
+
+
 START SERVER
 
-run gewoon e
-
+node server
 
 
 MONGO
