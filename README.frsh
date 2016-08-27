@@ -1,0 +1,15 @@
+START SERVER
+
+run gewoon e
+
+
+
+MONGO
+
+    start mongo in c9
+    - >>mongod --bind_ip=$IP --dbpath=data --nojournal
+    
+    
+    after unclean shutdown
+    - delete mongo.lock
+    - >>mongod --repair
